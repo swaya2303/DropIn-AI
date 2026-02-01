@@ -1,0 +1,152 @@
+{
+    "nav_home": {
+        "en": "Home",
+        "es": "Inicio",
+        "fr": "Accueil",
+        "de": "Startseite",
+        "it": "Home",
+        "pt": "Início",
+        "nl": "Start",
+        "pl": "Start",
+        "sv": "Hem",
+        "no": "Hjem"
+    },
+    "nav_dashboard": {
+        "en": "Dashboard",
+        "es": "Tablero",
+        "fr": "Tableau de bord",
+        "de": "Dashboard",
+        "it": "Bacheca",
+        "pt": "Painel",
+        "nl": "Dashboard",
+        "pl": "Panel",
+        "sv": "Panel",
+        "no": "Dashbord"
+    },
+    "nav_messages": {
+        "en": "Messages",
+        "es": "Mensajes",
+        "fr": "Messages",
+        "de": "Nachrichten",
+        "it": "Messaggi",
+        "pt": "Mensagens",
+        "nl": "Berichten",
+        "pl": "Wiadomości",
+        "sv": "Meddelanden",
+        "no": "Meldinger"
+    },
+    "nav_profile": {
+        "en": "Profile",
+        "es": "Perfil",
+        "fr": "Profil",
+        "de": "Profil",
+        "it": "Profilo",
+        "pt": "Perfil",
+        "nl": "Profiel",
+        "pl": "Profil",
+        "sv": "Profil",
+        "no": "Profil"
+    },
+    "inbox_title": {
+        "en": "Inbox",
+        "es": "Bandeja de entrada",
+        "fr": "Boîte de réception",
+        "de": "Posteingang",
+        "it": "Posta in arrivo",
+        "pt": "Caixa de entrada",
+        "nl": "Postvak IN",
+        "pl": "Skrzynka",
+        "sv": "Inkorg",
+        "no": "Innboks"
+    },
+    "filter_all": {
+        "en": "All",
+        "es": "Todos",
+        "fr": "Tous",
+        "de": "Alle",
+        "it": "Tutti",
+        "pt": "Todos",
+        "nl": "Alle",
+        "pl": "Wszystkie",
+        "sv": "Alla",
+        "no": "Alle"
+    },
+    "filter_updates": {
+        "en": "Updates",
+        "es": "Actualizaciones",
+        "fr": "Mises à jour",
+        "de": "Updates",
+        "it": "Aggiornamenti",
+        "pt": "Atualizações",
+        "nl": "Updates",
+        "pl": "Aktualizacje",
+        "sv": "Uppdateringar",
+        "no": "Oppdateringer"
+    },
+    "filter_nudges": {
+        "en": "Nudges",
+        "es": "Recordatorios",
+        "fr": "Rappels",
+        "de": "Anstupser",
+        "it": "Promemoria",
+        "pt": "Lembretes",
+        "nl": "Duwtjes",
+        "pl": "Przypomnienia",
+        "sv": "Puffar",
+        "no": "Påminnelser"
+    },
+    "filter_waitlist": {
+        "en": "Waitlist",
+        "es": "Lista de espera",
+        "fr": "Liste d'attente",
+        "de": "Warteliste",
+        "it": "Lista d'attesa",
+        "pt": "Lista de espera",
+        "nl": "Wachtlijst",
+        "pl": "Lista oczekujących",
+        "sv": "Väntelista",
+        "no": "Venteliste"
+    },
+    "filter_chat": {
+        "en": "Chat",
+        "es": "Chat",
+        "fr": "Discussion",
+        "de": "Chat",
+        "it": "Chat",
+        "pt": "Chat",
+        "nl": "Chat",
+        "pl": "Czat",
+        "sv": "Chatt",
+        "no": "Chat"
+    },
+    "mark_read": {
+        "en": "Mark all read",
+        "es": "Marcar todo como leído",
+        "fr": "Tout marquer comme lu",
+        "de": "Alles als gelesen markieren",
+        "it": "Segna tutto come letto",
+        "pt": "Marcar tudo como lido",
+        "nl": "Alles als gelezen markeren",
+        "pl": "Oznacz wszystkie jako przeczytane",
+        "sv": "Markera alla som lästa",
+        "no": "Merk alt som lest"
+    },
+    "game_invite": {
+        "en": "You have been invited to a game!",
+        "es": "¡Te han invitado a un juego!",
+        "fr": "Vous avez été invité à un match!",
+        "de": "Du wurdest zu einem Spiel eingeladen!"
+    },
+    "nudge_alert": {
+        "en": "Just checking: Are you still good for the game?",
+        "es": "Solo comprobando: ¿Sigues listo para el juego?",
+        "fr": "Juste pour vérifier: Êtes-vous toujours partant pour le match?",
+        "de": "Nur zur Überprüfung: Bist du noch dabei?"
+    },
+    "waitlist_promo": {
+        "en": "Good news! You've been promoted from the waitlist.",
+        "es": "¡Buenas noticias! Has sido promovido de la lista de espera.",
+        "fr": "Bonne nouvelle! Vous avez été promu de la liste d'attente.",
+        "de": "Gute Nachrichten! Du wurdest von der Warteliste befördert."
+    }
+}

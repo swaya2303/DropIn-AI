@@ -1,0 +1,149 @@
+[
+    {
+        "id": "g1",
+        "title": "Sunday Morning Soccer",
+        "sport": "Soccer",
+        "date": "2026-02-04",
+        "time": "10:00",
+        "location": "Community Park Field 1",
+        "organizer_id": "p1",
+        "max_players": 14,
+        "signed_up_players": [
+            "p1",
+            "p3",
+            "p5",
+            "p7",
+            "p12",
+            "p14"
+        ],
+        "status": "upcoming",
+        "confidence_score": 95,
+        "weather_forecast": "Sunny, 20°C",
+        "description": "Casual 7v7 game. All skill levels welcome.",
+        "language": "en"
+    },
+    {
+        "id": "g2",
+        "title": "Evening 5v5 Scrimmage",
+        "sport": "Soccer",
+        "date": "2026-02-02",
+        "time": "19:00",
+        "location": "Downtown Futsal Court",
+        "organizer_id": "p2",
+        "max_players": 4,
+        "signed_up_players": [
+            "p2",
+            "p15",
+            "p8",
+            "p10"
+        ],
+        "status": "upcoming",
+        "confidence_score": 88,
+        "weather_forecast": "Clear, 15°C",
+        "description": "Fast-paced indoor game. Bring flat shoes.",
+        "language": "en"
+    },
+    {
+        "id": "g3",
+        "title": "Competitive League Match",
+        "sport": "Soccer",
+        "date": "2026-02-03",
+        "time": "20:00",
+        "location": "City Stadium",
+        "organizer_id": "p4",
+        "max_players": 22,
+        "signed_up_players": [
+            "p4",
+            "p5",
+            "p6",
+            "p9",
+            "p10",
+            "p12"
+        ],
+        "status": "upcoming",
+        "confidence_score": 92,
+        "weather_forecast": "Cloudy, 18°C",
+        "description": "Full 11v11 match. Referees included.",
+        "language": "en"
+    },
+    {
+        "id": "g4",
+        "title": "Midweek Training Drills",
+        "sport": "Soccer",
+        "date": "2026-02-05",
+        "time": "18:30",
+        "location": "Westside Training Ground",
+        "organizer_id": "p6",
+        "max_players": 15,
+        "signed_up_players": [
+            "p6",
+            "p1",
+            "p2"
+        ],
+        "status": "upcoming",
+        "confidence_score": 75,
+        "weather_forecast": "Windy, 16°C",
+        "description": "Focus on passing and shooting drills.",
+        "language": "en"
+    },
+    {
+        "id": "g5",
+        "title": "Weekend Tournament",
+        "sport": "Soccer",
+        "date": "2026-02-07",
+        "time": "09:00",
+        "location": "Regional Sports Complex",
+        "organizer_id": "p12",
+        "max_players": 30,
+        "signed_up_players": [
+            "p12",
+            "p11",
+            "p13",
+            "p14"
+        ],
+        "status": "upcoming",
+        "confidence_score": 85,
+        "weather_forecast": "Sunny, 22°C",
+        "description": "All-day tournament. Teams assigned on arrival.",
+        "language": "en"
+    },
+    {
+        "id": "g6",
+        "title": "Lunch Break Kickabout",
+        "sport": "Soccer",
+        "date": "2026-02-06",
+        "time": "12:30",
+        "location": "Office Park Green",
+        "organizer_id": "p9",
+        "max_players": 8,
+        "signed_up_players": [
+            "p9",
+            "p8"
+        ],
+        "status": "upcoming",
+        "confidence_score": 60,
+        "weather_forecast": "Partly Cloudy, 19°C",
+        "description": "Quick 30-minute game during lunch.",
+        "language": "en"
+    },
+    {
+        "id": "g7",
+        "title": "Late Night Indoor",
+        "sport": "Soccer",
+        "date": "2026-02-02",
+        "time": "22:00",
+        "location": "24/7 Gym Arena",
+        "organizer_id": "p10",
+        "max_players": 12,
+        "signed_up_players": [
+            "p10",
+            "p5",
+            "p7"
+        ],
+        "status": "upcoming",
+        "confidence_score": 90,
+        "weather_forecast": "Indoor",
+        "description": "Late night session for night owls.",
+        "language": "en"
+    }
+]

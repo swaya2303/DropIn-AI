@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
+# GameSync MVP 🏆
+
+**GameSync** is an intelligent sports organizer designed to solve the flakiness problem in pickup games. 
+It uses a **Confidence Score** engine to predict game viability, a **Ghost Score** system to rate player reliability, and an **Incentive AI** to automatically fill spots when risk is high.
+
+## Features
+
+- **Ghost Scores**: Automated reliability rating (0-100) based on attendance, cancellations, and sportsmanship.
+- **Confidence Engine**: Real-time prediction of whether a game will happen or be cancelled.
+- **Incentive Engine**: Automatically triggers nudges, rewards, and waitlist promotions to save at-risk games.
+- **Smart Waitlist**: Ranks players by their Ghost Score, promoting the most reliable ones first.
+- **Unified Communication**: A central hub for all game updates with automated AI translation.
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open in Browser**:
+   Navigate to `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Demo Walkthrough 🚀
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The MVP includes a guided demo mode to showcase the features in a logical flow:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. **Start the Demo**: Click the large **"Start Guided Demo 🚀"** button on the Home Page.
+2. **Follow the Tooltips**: A blue tooltip box will guide you through:
+   - **Game Discovery**: Finding a game.
+   - **Game Details**: Viewing Confidence Scores and Roster Badges.
+   - **Player Profile**: Checking your Ghost Score breakdown.
+   - **Organizer Dashboard**: Managing games and viewing the Incentive Feed.
+   - **Communication Hub**: Checking messages and testing Translation.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Simulation Features
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- **Organizer Dashboard**: Use the **"⚡ Simulate Scenario"** button to watch the engine react in real-time to a cancellation, drop in confidence, and subsequent incentive recovery.
+- **Messages**: Use the **"Simulate Incoming"** button to generate test messages.
+- **Translation**: Use the language selector in the top-right corner to translate the interface into 10+ European languages.

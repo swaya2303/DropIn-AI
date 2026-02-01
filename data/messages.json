@@ -1,0 +1,47 @@
+[
+    {
+        "id": "m1",
+        "type": "update",
+        "content_key": "game_loc_change",
+        "fallback_text": "Game location changed to 'North Field'.",
+        "sender": "System",
+        "timestamp": "2026-06-01T10:00:00Z",
+        "isRead": false
+    },
+    {
+        "id": "m2",
+        "type": "nudge",
+        "content_key": "nudge_alert",
+        "fallback_text": "Just checking: Are you still good for the game?",
+        "sender": "GameSync Bot",
+        "timestamp": "2026-06-01T09:30:00Z",
+        "isRead": false
+    },
+    {
+        "id": "m3",
+        "type": "waitlist",
+        "content_key": "waitlist_promo",
+        "fallback_text": "Good news! You've been promoted from the waitlist.",
+        "sender": "System",
+        "timestamp": "2026-05-31T18:45:00Z",
+        "isRead": true
+    },
+    {
+        "id": "m4",
+        "type": "chat",
+        "content_key": "chat_msg_1",
+        "fallback_text": "Hey, anyone bringing a spare ball?",
+        "sender": "Mike Johnson",
+        "timestamp": "2026-06-01T08:15:00Z",
+        "isRead": false
+    },
+    {
+        "id": "m5",
+        "type": "chat",
+        "content_key": "chat_msg_2",
+        "fallback_text": "I'll bring one!",
+        "sender": "Sarah Chen",
+        "timestamp": "2026-06-01T08:20:00Z",
+        "isRead": false
+    }
+]
