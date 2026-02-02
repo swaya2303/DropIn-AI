@@ -193,53 +193,90 @@ export default function GameDetail() {
                     )}
                 </div>
 
-                {/* Players & Waitlist */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Signed Up */}
-                    <div>
-                        <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Players ({players.length}/{game.max_players})</h2>
+                {/* Teams View - Players Divided */}
+                <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+                    <div className="flex justify-between items-center mb-6">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Teams</h2>
+                        <div className="flex items-center gap-2">
+                            <span className="text-sm text-gray-500">Players: {players.length}/{game.max_players}</span>
                             {isFull && <span className="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-bold rounded uppercase">Full</span>}
                         </div>
-                        <div className="space-y-3">
-                            {players.map(player => (
-                                <div key={player.id} className="flex items-center justify-between bg-white dark:bg-gray-800 p-3 rounded shadow-sm border border-gray-100 dark:border-gray-700">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold text-gray-600">
-                                            {player.name.charAt(0)}
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* Team A */}
+                        <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl p-5 border-2 border-blue-200 dark:border-blue-700">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">A</div>
+                                <h3 className="text-xl font-bold text-blue-800 dark:text-blue-300">Team A</h3>
+                                <span className="ml-auto text-sm text-blue-600 dark:text-blue-400">{Math.ceil(players.length / 2)} players</span>
+                            </div>
+                            <div className="space-y-3">
+                                {players.slice(0, Math.ceil(players.length / 2)).map(player => (
+                                    <div key={player.id} className="flex items-center justify-between bg-white dark:bg-gray-800 p-3 rounded-lg shadow-sm">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                                                {player.name.charAt(0)}
+                                            </div>
+                                            <div>
+                                                <span className="font-semibold text-gray-900 dark:text-white block">{player.name}</span>
+                                                <span className="text-xs text-gray-500">{player.languages?.join(', ') || 'English'}</span>
+                                            </div>
                                         </div>
-                                        <span className="font-medium text-gray-900 dark:text-white">{player.name}</span>
+                                        <div className="flex flex-col items-end gap-1">
+                                            <span className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 rounded text-blue-800 dark:text-blue-300 text-xs font-bold">⭐ Skill {player.skill_level}</span>
+                                            <span className="px-2 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs">👻 {player.ghost_score}</span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 text-xs">
-                                        <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-gray-600 dark:text-gray-300">Skill {player.skill_level}</span>
-                                        <span className="px-1.5 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded" title="Ghost Score">👻 {player.ghost_score}</span>
+                                ))}
+                                {players.length === 0 && <p className="text-blue-600 text-sm italic">No players yet</p>}
+                            </div>
+                        </div>
+
+                        {/* Team B */}
+                        <div className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 rounded-xl p-5 border-2 border-red-200 dark:border-red-700">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">B</div>
+                                <h3 className="text-xl font-bold text-red-800 dark:text-red-300">Team B</h3>
+                                <span className="ml-auto text-sm text-red-600 dark:text-red-400">{Math.floor(players.length / 2)} players</span>
+                            </div>
+                            <div className="space-y-3">
+                                {players.slice(Math.ceil(players.length / 2)).map(player => (
+                                    <div key={player.id} className="flex items-center justify-between bg-white dark:bg-gray-800 p-3 rounded-lg shadow-sm">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                                {player.name.charAt(0)}
+                                            </div>
+                                            <div>
+                                                <span className="font-semibold text-gray-900 dark:text-white block">{player.name}</span>
+                                                <span className="text-xs text-gray-500">{player.languages?.join(', ') || 'English'}</span>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-col items-end gap-1">
+                                            <span className="px-2 py-0.5 bg-red-100 dark:bg-red-900/30 rounded text-red-800 dark:text-red-300 text-xs font-bold">⭐ Skill {player.skill_level}</span>
+                                            <span className="px-2 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs">👻 {player.ghost_score}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                                {players.length <= 1 && <p className="text-red-600 text-sm italic">Waiting for more players...</p>}
+                            </div>
                         </div>
                     </div>
 
                     {/* Waitlist */}
-                    <div>
-                        <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Waitlist ({waitlist.length})</h2>
-                        {waitlist.length > 0 ? (
-                            <div className="space-y-3">
+                    {waitlist.length > 0 && (
+                        <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Waitlist ({waitlist.length})</h3>
+                            <div className="flex flex-wrap gap-2">
                                 {waitlist.map((player, idx) => (
-                                    <div key={player.id} className="flex items-center justify-between bg-white dark:bg-gray-800 p-3 rounded shadow-sm border border-gray-100 dark:border-gray-700 opacity-75">
-                                        <div className="flex items-center gap-3">
-                                            <span className="text-gray-400 font-mono text-sm">#{idx + 1}</span>
-                                            <span className="font-medium text-gray-900 dark:text-white">{player.name}</span>
-                                        </div>
-                                        <div className="text-xs text-gray-500">
-                                            {player.distance_from_venue_km}km away • 👻 {player.ghost_score}
-                                        </div>
+                                    <div key={player.id} className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 px-3 py-2 rounded-full">
+                                        <span className="text-gray-400 font-mono text-xs">#{idx + 1}</span>
+                                        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{player.name}</span>
                                     </div>
                                 ))}
                             </div>
-                        ) : (
-                            <p className="text-gray-500 text-sm italic">No one waiting yet.</p>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
 
                 {/* Game Chat */}

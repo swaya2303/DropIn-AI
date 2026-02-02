@@ -23,8 +23,11 @@ export default function Sidebar() {
         <Link href="/" className={`block px-4 py-3 rounded-lg transition-colors ${isActive('/')}`}>
           {t('nav_home')}
         </Link>
-        <Link href="/dashboard" className={`block px-4 py-3 rounded-lg transition-colors ${isActive('/dashboard')}`}>
-          {t('nav_dashboard')}
+        <Link href="/organizer-dashboard" className={`block px-4 py-3 rounded-lg transition-colors ${isActive('/organizer-dashboard')}`}>
+          Organizer Dashboard
+        </Link>
+        <Link href="/player-dashboard" className={`block px-4 py-3 rounded-lg transition-colors ${isActive('/player-dashboard')}`}>
+          Player Dashboard
         </Link>
         <Link href="/messages" className={`flex justify-between items-center px-4 py-3 rounded-lg transition-colors ${isActive('/messages')}`}>
           <span>{t('nav_messages')}</span>

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "r1",
+        "rater_id": "p13",
+        "rated_player_id": "p1",
+        "game_id": "g101",
+        "skill_rating": 8,
+        "comment": "Great teammate, excellent ball control!",
+        "timestamp": "2024-01-15T10:00:00Z"
+    },
+    {
+        "id": "r2",
+        "rater_id": "p13",
+        "rated_player_id": "p2",
+        "game_id": "g101",
+        "skill_rating": 7,
+        "comment": "Good player, very reliable.",
+        "timestamp": "2024-01-15T10:05:00Z"
+    },
+    {
+        "id": "r3",
+        "rater_id": "p1",
+        "rated_player_id": "p13",
+        "game_id": "g101",
+        "skill_rating": 9,
+        "comment": "Amazing skill level and sportsmanship!",
+        "timestamp": "2024-01-15T11:00:00Z"
+    },
+    {
+        "id": "r4",
+        "rater_id": "p2",
+        "rated_player_id": "p13",
+        "game_id": "g101",
+        "skill_rating": 8,
+        "comment": "Very skilled player, pleasure to play with.",
+        "timestamp": "2024-01-15T11:30:00Z"
+    },
+    {
+        "id": "r5",
+        "rater_id": "p13",
+        "rated_player_id": "p9",
+        "game_id": "g102",
+        "skill_rating": 6,
+        "comment": "Decent skills, good team spirit.",
+        "timestamp": "2024-01-20T14:00:00Z"
+    },
+    {
+        "id": "r6",
+        "rater_id": "p4",
+        "rated_player_id": "p13",
+        "game_id": "g105",
+        "skill_rating": 9,
+        "comment": "Top-notch player!",
+        "timestamp": "2024-01-22T16:00:00Z"
+    }
+]
