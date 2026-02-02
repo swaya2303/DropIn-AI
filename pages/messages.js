@@ -250,7 +250,7 @@ export default function Messages() {
 
                                         {/* Actions */}
                                         <div className="flex gap-3">
-                                            {selectedMessage.type === 'chat' && (
+                                            {(selectedMessage.type === 'chat' || selectedMessage.type === 'nudge') && (
                                                 <button className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors">
                                                     Reply
                                                 </button>
