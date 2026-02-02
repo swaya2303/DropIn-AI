@@ -19,6 +19,7 @@
             "en",
             "es"
         ],
+        "preferred_language": "en",
         "location": "Downtown",
         "attendance_history": [
             {
@@ -58,6 +59,7 @@
             "en",
             "zh"
         ],
+        "preferred_language": "en",
         "location": "Westside",
         "attendance_history": [
             {
@@ -92,6 +94,7 @@
         "languages": [
             "en"
         ],
+        "preferred_language": "en",
         "location": "North Hills",
         "attendance_history": [],
         "cancellation_history": [],
@@ -119,6 +122,7 @@
             "en",
             "fr"
         ],
+        "preferred_language": "fr",
         "location": "Downtown",
         "attendance_history": [
             {
@@ -155,6 +159,7 @@
             "da",
             "no"
         ],
+        "preferred_language": "en",
         "location": "Uptown",
         "attendance_history": [],
         "cancellation_history": [],
@@ -180,6 +185,7 @@
             "en",
             "it"
         ],
+        "preferred_language": "en",
         "location": "Eastside",
         "attendance_history": [
             {
@@ -209,6 +215,7 @@
             "en",
             "de"
         ],
+        "preferred_language": "en",
         "location": "Downtown",
         "attendance_history": [],
         "cancellation_history": [],
@@ -234,6 +241,7 @@
             "en",
             "es"
         ],
+        "preferred_language": "es",
         "location": "Westside",
         "attendance_history": [],
         "cancellation_history": [],
@@ -258,6 +266,7 @@
             "en",
             "fr"
         ],
+        "preferred_language": "fr",
         "location": "North Hills",
         "attendance_history": [],
         "cancellation_history": [],
@@ -282,6 +291,7 @@
             "en",
             "pl"
         ],
+        "preferred_language": "en",
         "location": "Uptown",
         "attendance_history": [],
         "cancellation_history": [],
@@ -305,6 +315,7 @@
         "languages": [
             "en"
         ],
+        "preferred_language": "en",
         "location": "Eastside",
         "attendance_history": [],
         "cancellation_history": [],
@@ -329,6 +340,7 @@
             "en",
             "pt"
         ],
+        "preferred_language": "en",
         "location": "Downtown",
         "attendance_history": [],
         "cancellation_history": [],
@@ -354,6 +366,7 @@
             "en",
             "sv"
         ],
+        "preferred_language": "sv",
         "location": "Westside",
         "attendance_history": [],
         "cancellation_history": [],
@@ -378,6 +391,7 @@
             "en",
             "nl"
         ],
+        "preferred_language": "en",
         "location": "North Hills",
         "attendance_history": [],
         "cancellation_history": [],
@@ -404,6 +418,7 @@
             "en",
             "jp"
         ],
+        "preferred_language": "en",
         "location": "Uptown",
         "attendance_history": [],
         "cancellation_history": [],

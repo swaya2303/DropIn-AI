@@ -2,9 +2,12 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Layout from '../../components/Layout';
+import GameChat from '../../components/GameChat';
+import LanguageDemo from '../../components/LanguageDemo';
 import gamesData from '../../data/games.json';
 import playersData from '../../data/players.json';
 import { calculateConfidenceScore } from '../../utils/confidenceScore';
+import { useTranslation } from '../../utils/translationEngine';
 
 // Simulated current user ID
 const CURRENT_USER_ID = "p13";
@@ -12,6 +15,7 @@ const CURRENT_USER_ID = "p13";
 export default function GameDetail() {
     const router = useRouter();
     const { id } = router.query;
+    const { language, setLanguage } = useTranslation();
     const [game, setGame] = useState(null);
     const [players, setPlayers] = useState([]);
     const [waitlist, setWaitlist] = useState([]);
@@ -151,6 +155,11 @@ export default function GameDetail() {
                         <p className="text-gray-600 dark:text-gray-300">{game.description}</p>
                     </div>
 
+                    {/* Language Demo Button */}
+                    <div className="mb-6 flex justify-center">
+                        <LanguageDemo currentLanguage={language} onLanguageChange={setLanguage} />
+                    </div>
+
                     {/* Action Button */}
                     <div className="flex gap-4">
                         {userStatus === 'none' && (
@@ -231,6 +240,14 @@ export default function GameDetail() {
                             <p className="text-gray-500 text-sm italic">No one waiting yet.</p>
                         )}
                     </div>
+                </div>
+
+                {/* Game Chat */}
+                <div className="mt-8">
+                    <GameChat
+                        gameId={id}
+                        currentPlayerLanguage={language}
+                    />
                 </div>
 
             </div>
